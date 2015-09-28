@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="skrollr.js parallax animation css3 fifa 5s success life">
+    <meta name="description" content="A gorgeous blend of parallax and css animation transforms to tell 5 Ss of FIFA that brings success IN GAME and IN LIFE.">
+    <meta name="author" content="Manan Singh, DSVV">
+
+    <title>FIFA 5S</title>
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+
+  <style>
+
+html, body{
+  padding:0; margin:0;
+  height: 100%; width: 100%;
+  overflow-x:hidden;
+}
+
+
+#dvLoading
+{
+   background:#000 url(static/img/load.gif) no-repeat center center;
+     background-size: cover;
+     top:0; right: 0; left: 0; bottom: 0;
+   position: fixed;
+   z-index: 1000;
+}
+#a{
+  background-image: url(static/img/stad2.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  z-index: -1;
+  padding: 10% 10% 10% 10%;
+  text-align: center;
+}
+#a span{
+  font-size: 10em;
+  color: #50643a;
+  font-family: "Century Gothic" ;
+  font-weight: bold;
+}
+#a span:nth-child(2){
+  color: #9b999b;
+}
+#a span:last-child{
+  color: #707070;
+  font-size: 2em;
+}
+
+
+#ab{
+  background-image: url(static/img/stad.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  z-index: -2;  
+}
+#ab .col-md-3 img{
+  left: 110%;
+  top: 800px;
+  position: absolute;
+  height: 100px;
+  width: auto;  
+}
+#ab .col-md-9 img{
+  top: 350px;
+  left: 40%;
+  position: absolute;
+  height: 500px;
+  width: auto;
+}
+
+#b{
+  background-image: url(static/img/stad.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  z-index: -2;
+}
+#b .col-md-3 img{
+  left: 100%;
+  top: 100px;
+  position: absolute;
+  height: 100px;
+  width: auto;  
+}
+#b .col-md-9 img{
+  padding: 20% 20% 20% 20%;
+  height: 900px;
+  width: auto;
+}
+
+#c{
+  background-image: url(static/img/stad.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  z-index: -3;
+}
+#c .col-md-3 img{
+  left: 200%;
+  top: 60px;
+  position: absolute;
+  height: 100px;
+  width: auto;  
+}
+#c .col-md-9 img{
+  top: 250px;
+  left:20%;
+  position: absolute;
+  height: 500px;
+  width: auto;
+}
+
+#d{
+  background-image: url(static/img/stad.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  z-index: -4;
+}
+#d .col-md-9 img{
+  top: 250px;
+  left:10%;
+  position: absolute;
+  height: 500px;
+  width: auto;
+}
+#d .col-md-3 img{
+  right: 170%;
+  top: 250px;
+  position: absolute;
+  height: 100px;
+  width: auto;  
+}
+
+#e{
+  background-image: url(static/img/stad.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 1000px;
+  background-size: cover;
+  z-index: -5;
+}
+#e .col-md-3 img{
+  left: 180%;
+  top: 150px;
+  position: absolute;
+  height: 100px;
+  width: auto;  
+}
+#e .col-md-9 img{
+  top: 170px;
+  right: 40%;
+  position: absolute;
+  height: 500px;
+  width: auto;
+}
+
+#end{
+  background-image: url(static/img/stad2.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 800px;
+  background-size: cover;
+  z-index: -6;
+  padding: 20% 20% 0% 20%;
+  font-size: 4em;
+  color: #696766;
+  font-family: "Century Gothic";
+}
+#a2ab, #ab2b, #b2c, #c2d, #d2e, #e2end{
+  height: 200px;
+  background-color: #546941;
+  text-align: center;
+  color: #b1b0b0;
+  font-size: 3em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: "Century Gothic";
+}
+#textend3{
+  bottom: 5%; right: 5%;
+  color: #989898;
+  z-index: 100;
+  position: fixed;
+  font-size: 1.5em;
+}
+  </style>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51999582-2', 'fifa-5s.appspot.com');
+  ga('send', 'pageview');
+
+</script>
+
+  
+  </head>
+  <body id="skrollr-body">
+
+  <div id="dvLoading" style="padding-top:5%;text-align: center;"><h1><b>PLEASE WAIT</b>...</h1><br/><h3 style="color:#a0a0a0;">"This server is powered by a lemon and two electrodes." :)</h3></div>
+
+  <div class="container-fluid">
+
+<div class="row col-md-12" style="text-align:center;color:#c0c0c0;">*This app works best on Mozilla Firefox.</div>
+
+    <div class="row" id="a">
+      <div class="col-md-12" >
+        <span data-0="opacity:1;" data-top="opacity:0;">FIFA <br/></span>
+        <span data-0="opacity:0.8;" data-top="opacity:0;">5S <br/></span>   <br/>     
+        <span data-0="opacity:0.8;" data-top="opacity:0;">-scroll down-<br/></span>
+      </div>
+    </div>
+
+    <div class="row" id="a2ab">1. &nbsp; &nbsp; S E E</div>
+
+    <div class="row" id="ab">
+      <div class="col-md-3">
+        <img src="static/img/ball.png" data-top="transform: scale(1) rotate(0deg) translate(0px,0px);" data-top-bottom=" transform: scale(2) rotate(-160deg) translate(100px,-50px);" data-anchor-target="#ab"/>
+      </div>
+      <div class="col-md-9">
+      <img src="static/img/pl0.png" data-top="transform: scale(1) translate(0px,0px);" data-top-bottom=" transform: scale(1.5) translate(-180px,10px);" data-anchor-target="#ab"/>
+      </div>
+    </div>
+    <div class="row" id="ab2b">2. &nbsp; &nbsp; S T A R T</div>
+
+    <div class="row" id="b">
+      <div class="col-md-3">
+        <img src="static/img/ball.png" data-top="transform: scale(1.5) rotate(0deg) translate(0px, 0px);" data-top-bottom="transform: scale(1) rotate(-20deg) translate(0px, 450px);" data-anchor-target="#b"/>
+      </div>
+      <div class="col-md-9">
+      <img src="static/img/pl1.png" data-top="transform: scale(1) rotate(0deg) translate(0px, 0px);" data-top-bottom="transform: scale(1.3) rotate(20deg) translate(-80px, 100px);" data-anchor-target="#b"/>
+      </div>
+    </div>
+    <div class="row" id="b2c">3. &nbsp; &nbsp; S P R I N G</div>
+
+    </div>
+    <div class="row" id="c">
+      <div class="col-md-3">
+        <img src="static/img/ball.png" data-top="transform: rotate(0deg) translate(0px, 0px);" data-top-bottom="transform: rotate(-40deg) translate(0px, 400px);" data-anchor-target="#c"/>
+      </div>
+      <div class="col-md-9">
+      <img src="static/img/pl2.png" data-top="transform: scale(1) rotate(0deg) translate(0px, 0px);" data-top-bottom="transform: scale(1.1) rotate(-20deg) translate(0px, 200px);" data-anchor-target="#c"/>
+      </div>
+    </div>
+    <div class="row" id="c2d">4. &nbsp; &nbsp; S T R I K E</div>
+
+    <div class="row" id="d">
+      <div class="col-md-9">
+      <img src="static/img/pl3.png" data-top="transform: scale(1) skew(0deg) translate(0px, 0px);" data-top-bottom="transform: scale(1.2) skew(20deg) translate(100px, 100px);" data-anchor-target="#d"/>
+      </div>
+      <div class="col-md-3">
+        <img src="static/img/ball.png" data-top="transform: scale(1.2) rotate(0deg) translate(0px, 0px);" data-top-bottom="transform: scale(1) rotate(70deg) translate(200px, 50px);" data-anchor-target="#d"/>
+      </div>
+    </div>
+    <div class="row" id="d2e">5. &nbsp; &nbsp; S T O P</div>
+
+    <div class="row" id="e">
+      <div class="col-md-3">
+        <img src="static/img/ball.png" data-top="transform: scale(1) translate(0px, 0px);" data-top-bottom="transform: scale(0.5) translate(60px, 10px);" data-anchor-target="#e"/>
+      </div>
+      <div class="col-md-9">
+      <img src="static/img/pl4.png" data-top="transform: scale(1) skew(0deg) translate(0px,0px);" data-top-bottom="transform: scale(1.1) skew(40deg) translate(-10px, 0px);" data-anchor-target="#e"/>
+      </div>
+    </div>
+    <div class="row" id="e2end">S U C C E E D</div>
+
+    <div class="row" id="end">
+       FEEL <b>FIFA</b><br/> FEEL <b>5S</b> <br/> FEEL <b>SUCCESS</b>.
+    </div>
+
+    <div id="textend3" data-top="opacity:0;" data-top-center="opacity:1;" data-anchor-target="#end"><a href="http://mananworks.blogspot.in/2014/06/fifa-5s.html" target="_blank">About</a><br/><br/>made by :<br/><a href="http://www.mananworks.appspot.com" target="_blank">&#9786;manan</a></div>
+
+  </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="static/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/skrollr.min.js"></script>
+    <script>
+     var s = skrollr.init({forceHeight: false});
+     $(window).load(function(){
+      $('#dvLoading').fadeOut(2000);
+      });
+    </script>
+
+  </body>
+</html>
