@@ -1,7 +1,7 @@
 # FIFA-5S
 A Parallax scrolling web experiment, telling the five secret S's of Success.
 
-**Website link**: [www.fifa-5s.appspot.com](www.fifa-5s.appspot.com)
+**Website link**: [www.fifa-5s.appspot.com](http://www.fifa-5s.appspot.com)
 
 >*note*: for Best viewing experience, Mozilla Firefox is recommended.
 
