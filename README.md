@@ -1,27 +1,22 @@
 # FIFA-5S
 A Parallax scrolling web experiment, telling the five secret S's of Success.
 
-**Website link**: [www.fifa-5s.appspot.com](http://www.fifa-5s.appspot.com)
-
 >*note*: for Best viewing experience, Mozilla Firefox is recommended.
-
-
-For more Details: [blog](http://mananworks.blogspot.in/2014/06/fifa-5s.html)
 
 
 ### Info
 
 FIFA 5S is a web experiment which, in a brilliant way, presents the FIFA's 5-'S's that lead to success IN GAME & IN LIFE.
 
-It uses css3 and skrollr.js for creating a gorgeous blend of parallax and animation effects, as you scroll
+It uses css3 and skrollr.js for creating a gorgeous blend of parallax and animation effects, as you scroll.
 
 
 ### Tools Used
 
-css3
-skrollr.js
-photoshop
-google appengine
+css3,
+skrollr.js,
+photoshop,
+google appengine,
 google analytics
 
 
